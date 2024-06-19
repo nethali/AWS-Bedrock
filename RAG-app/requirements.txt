@@ -1,0 +1,14 @@
+# AWS SDK for Python to interact with AWS services
+boto3
+
+# Additional community tools for LangChain (assuming this is the correct package name
+langchain_community
+
+# Streamlit library for creating interactive web applications
+streamlit
+
+# PDF handling library for reading and manipulating PDF files
+pypdf
+
+# FAISS (CPU version) for efficient similarity search and clustering of dense vectors
+faiss-cpu

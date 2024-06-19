@@ -1,0 +1,5 @@
+# AWS SDK for Python to interact with AWS services
+boto3
+
+# AWS Command Line Interface for managing AWS services
+awscli
