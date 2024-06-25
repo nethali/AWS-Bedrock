@@ -1,5 +1,5 @@
 ## RAG Application based on AWS Bedrock
-This RAG (Risk Assessment and Governance) application on AWS Bedrock enables users 
+This RAG (Retrieval Augmented Generation) application on AWS Bedrock enables users 
 to read documents stored in the data folder and ask questions about their contents.
 
 Ensure that all your PDF documents are placed within the 'data' folder.
