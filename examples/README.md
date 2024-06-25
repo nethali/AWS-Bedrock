@@ -18,7 +18,7 @@ Step 4: Run the necessary python script
 ```bash
 python <name of python script>
 ```
-Step 4: Deactivate the virtual environment when done
+Step 5: Deactivate the virtual environment when done
 ```bash
 deactivate
 ```
