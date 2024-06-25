@@ -14,7 +14,7 @@ model_payload = {
     "prompt": "[INST]" + prompt_text + "[/INST]",  # Encapsulate the prompt in instruction tags
     "max_gen_len": 512,                            # Maximum length of the generated text
     "temperature": 0.5,                            # Temperature setting for text generation (controls randomness)
-    "top_p": 0.9                                   # Top-p setting for nucleus sampling
+    "top_p": 0.9                                   # Top-p setting. Use a lower value to ignore less probable options
 }
 
 # Convert the payload to a JSON string
