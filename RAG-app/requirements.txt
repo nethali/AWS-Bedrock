@@ -1,7 +1,7 @@
 # AWS SDK for Python to interact with AWS services
 boto3
 
-# Additional community tools for LangChain (assuming this is the correct package name
+# Additional community tools for LangChain
 langchain_community
 
 # Streamlit library for creating interactive web applications
