@@ -1,5 +1,5 @@
 ## Few AWS Bedrock examples
-Create your virtual envirment as below
+Ensure that you have enabled the correct bedrock model in your account and that you have logged into your AWS account using the appropriate credentials.
 
 Step 1: Create a virtual environment named 'myenv'
 ```bash
