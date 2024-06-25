@@ -103,7 +103,7 @@ def get_response_llm(llm, vectorstore_faiss, query):
 
 def main():
     """
-    Main function to setup Streamlit app for interacting with OpenShift AI documents using AWS Bedrock.
+    Main function to setup Streamlit app for interacting with given documents using AWS Bedrock.
     """
     st.set_page_config(page_title="Chat with OpenShift AI")
     
