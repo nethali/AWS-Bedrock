@@ -14,7 +14,7 @@ model_payload = {
     "prompt": prompt_text,
     "maxTokens": 512,              # Maximum number of tokens to generate
     "temperature": 0.8,            # Temperature setting for text generation (controls randomness)
-    "topP": 0.8                    # Top-p setting for nucleus sampling
+    "topP": 0.8                    # Top-p setting. Use a lower value to ignore less probable options
 }
 
 # Convert the payload to a JSON string
