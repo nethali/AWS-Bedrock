@@ -14,6 +14,10 @@ Step 3: Install necessary packages
 ```bash
 pip install -r requirements.txt
 ```
+Step 4: Run the necessary python script
+```bash
+python <name of python script>
+```
 Step 4: Deactivate the virtual environment when done
 ```bash
 deactivate
