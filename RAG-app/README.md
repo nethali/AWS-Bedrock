@@ -4,7 +4,7 @@ to read documents stored in the data folder and ask questions about their conten
 
 Ensure that all your PDF documents are placed within the 'data' folder.
 
-Create your virtual envirment as below
+You should enable the correct bedrock model in your account and log into your AWS account using the appropriate credentials.
 
 Step 1: Create a virtual environment named 'myenv'
 ```bash
