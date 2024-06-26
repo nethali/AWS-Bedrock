@@ -21,7 +21,7 @@ pip install -r requirements.txt
 ```
 Step 4: Launch and interact with a Streamlit application defined in the Python script myapp.py
 ```bash
-streamlit run myapp.py  
+streamlit run app.py  
 ```
 Step 5: Deactivate the virtual environment when done
 ```bash
