@@ -17,7 +17,7 @@ from langchain.prompts import PromptTemplate
 from langchain.chains import RetrievalQA
 
 # Initialize Bedrock client
-bedrock_client = boto3.client(service_name="bedrock-runtime")
+bedrock_client = boto3.client(service_name="bedrock-runtime", region_name="us-west-2")
 
 # Initialize BedrockEmbeddings for Titan model
 bedrock_embeddings = BedrockEmbeddings(model_id="amazon.titan-embed-text-v1", client=bedrock_client)
