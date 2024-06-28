@@ -17,8 +17,12 @@ RUN pip install --no-cache-dir --upgrade -r requirements.txt
 COPY app.py .
 
 # Create a non-root user and switch to it
-RUN useradd --no-log-init --system --create-home streamlit
+# RUN useradd --no-log-init --system --create-home streamlit
 USER streamlit
+
+# Permissions to allow container to run on OpenShift
+RUN chgrp -R 0 /app && \
+    chmod -R g=u /app
 
 # Expose the port that Streamlit will run on
 EXPOSE 8501
