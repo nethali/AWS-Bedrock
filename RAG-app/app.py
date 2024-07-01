@@ -127,7 +127,7 @@ def main():
     Main function to setup Streamlit app for interacting with given documents using AWS Bedrock.
     """
     # Set up the Streamlit page
-    st.set_page_config(page_title="Chat with OpenShift AI", layout="wide")
+    st.set_page_config(page_title="Chat with PDF", layout="wide")
     st.header("Chat with your PDF document using AWS Bedrock")
 
     # Initialize session state to store the FAISS index
