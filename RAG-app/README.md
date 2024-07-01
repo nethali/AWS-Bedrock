@@ -2,6 +2,9 @@
 This RAG (Retrieval Augmented Generation) application on AWS Bedrock enables users 
 to upload a PDF documents and ask questions about its contents.
 
+### Applicaiton architecture
+Read [this document](https://docs.google.com/document/d/e/2PACX-1vRvapmj59FBVtJFBvHEZtWXY9WlcZxJyvGwLgTykKNNdlJROWRgEvVgFOM_8aBlI3RDn3Fo8GTQFI0d/pub#h.bduu9qqz3u9n)
+
 ### Run applicaiton on ROSA
 Read [this document](https://docs.google.com/document/d/e/2PACX-1vRvapmj59FBVtJFBvHEZtWXY9WlcZxJyvGwLgTykKNNdlJROWRgEvVgFOM_8aBlI3RDn3Fo8GTQFI0d/pub#h.bduu9qqz3u9n)
 
