@@ -2,9 +2,11 @@
 This RAG (Retrieval Augmented Generation) application on AWS Bedrock enables users 
 to read documents stored in the data folder and ask questions about their contents.
 
-Ensure that all your PDF documents are placed within the 'data' folder.
+### Run applicaiton on ROSA
+Read [this document](https://docs.google.com/document/d/e/2PACX-1vRvapmj59FBVtJFBvHEZtWXY9WlcZxJyvGwLgTykKNNdlJROWRgEvVgFOM_8aBlI3RDn3Fo8GTQFI0d/pub#h.bduu9qqz3u9n)
 
-You should enable the correct bedrock model in your account and log into your AWS account using the appropriate credentials.
+### Run applicaiton on your PC
+Ensure to enable the correct bedrock model in your account and log into your AWS account using the appropriate credentials.
 
 Step 1: Create a virtual environment named 'myenv'
 ```bash
