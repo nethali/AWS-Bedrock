@@ -23,9 +23,9 @@ bedrock_client = boto3.client(service_name="bedrock-runtime", region_name="us-we
 # Initialize BedrockEmbeddings for Titan model
 bedrock_embeddings = BedrockEmbeddings(model_id="amazon.titan-embed-text-v1", client=bedrock_client)
 
-def data_ingestion(directory):
+def load_and_split_pdfs(directory):
     """
-    Load documents from a directory using PyPDFDirectoryLoader and split them using RecursiveCharacterTextSplitter.
+    Load and split PDF documents from a directory using PyPDFDirectoryLoader and RecursiveCharacterTextSplitter.
     Args:
         directory (str): Path to the directory containing PDF files.
     Returns:
@@ -37,11 +37,11 @@ def data_ingestion(directory):
     docs = text_splitter.split_documents(documents)
     return docs
 
-def get_vector_store(docs):
+def create_vector_store(docs):
     """
-    Create and save FAISS vector store from documents.
+    Create and save a FAISS vector store from split documents.
     Args:
-        docs (list): List of documents.
+        docs (list): List of split documents.
     Returns:
         FAISS: Created FAISS index.
     """
@@ -153,8 +153,8 @@ def main():
                         f.write(uploaded_file.getbuffer())
                     
                     # Process the uploaded file
-                    docs = data_ingestion("temp")
-                    st.session_state.faiss_index = get_vector_store(docs)
+                    docs = load_and_split_pdfs("temp")
+                    st.session_state.faiss_index = create_vector_store(docs)
                     
                     # Remove the temporary file
                     os.remove(os.path.join("temp", uploaded_file.name))
@@ -191,3 +191,4 @@ if __name__ == "__main__":
     # Create a temporary directory to store uploaded files
     os.makedirs("temp", exist_ok=True)
     main()
+
